@@ -1,20 +1,23 @@
+import { PreguntasRespuestas } from './preguntando/db/database';
+import { dibujarPreguntasRespuestas } from './preguntando/db/preguntando';
 import './style.css';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-  <ul>
-  <li> <button value="false">1</button></li>
-  <li> <button value="false">50</button></li>
-  <li> <button value="true">123</button></li>
-  <li> <button value="true">4</button></li>
-</ul>
-  </div>
+ 
 `;
 
-const r = document.querySelectorAll<HTMLButtonElement>('button');
+const divApp = document.querySelector<HTMLDivElement>('#app')!;
 
-r?.forEach((b) => {
-	b.addEventListener('click', (e) => {
-		console.log(b.value);
+const db = PreguntasRespuestas;
+
+// dibujarPreguntasRespuestas(db[0], divApp);
+
+dibujarPreguntasRespuestas(db[0], divApp);
+
+const b = document.querySelectorAll('button')!;
+
+b.forEach((btn) => {
+	btn.addEventListener('click', () => {
+		dibujarPreguntasRespuestas(db[1], divApp);
 	});
 });
