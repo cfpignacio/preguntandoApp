@@ -19,5 +19,6 @@ const b = document.querySelectorAll('button')!;
 b.forEach((btn) => {
 	btn.addEventListener('click', () => {
 		dibujarPreguntasRespuestas(db[1], divApp);
+		console.log(btn.value);
 	});
 });
