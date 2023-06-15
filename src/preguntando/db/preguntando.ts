@@ -18,7 +18,7 @@ export function dibujarPreguntasRespuestas(elemento: HTMLDivElement) {
 			btn.value = String(r.correcta);
 			btn.classList.add('botonclick');
 			btn.textContent = r.respuesta;
-			btn.addEventListener('click', (b) => {
+			btn.addEventListener('click', () => {
 				console.log(r.correcta);
 				if (r.correcta) {
 					++puntos;
