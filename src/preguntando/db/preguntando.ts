@@ -33,6 +33,6 @@ export function dibujarPreguntasRespuestas(elemento: HTMLDivElement) {
 
 		++ContadorPregunta;
 	} else {
-		elemento.innerHTML = `<h1>COMPLETADO!!!</h1> <h3>puntos: ${puntos}/ ${db.length}</h3>`;
+		elemento.innerHTML = `<h1>COMPLETADO!!! 🎆 🔥 </h1> <h3>puntos: ${puntos} / ${db.length}  </h3>`;
 	}
 }

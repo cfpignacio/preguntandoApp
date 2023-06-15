@@ -2,47 +2,53 @@ import { IPreguntaRespuesta } from './preguntado.interface';
 
 export const PreguntasRespuestas: IPreguntaRespuesta[] = [
 	{
-		pregunta: '¿pregunta 1?',
+		pregunta:
+			'¿Cuál de las siguientes opciones es un método utilizado para agregar un elemento al final de un array en JavaScript?',
 		respuestas: [
-			{ respuesta: '2', correcta: true },
-			{ respuesta: '3', correcta: false },
-			{ respuesta: '4', correcta: false },
+			{ respuesta: 'push()', correcta: true },
+			{ respuesta: 'pop()', correcta: false },
+			{ respuesta: 'shift()', correcta: false },
+			{ respuesta: 'unshift()', correcta: false },
 		],
 	},
 	{
-		pregunta: '¿pregunta 2?',
+		pregunta:
+			'¿Cuál de las siguientes opciones se utiliza para detener la ejecución de un bucle en JavaScript?',
 		respuestas: [
-			{ respuesta: '25', correcta: true },
-			{ respuesta: '33', correcta: false },
-			{ respuesta: '41', correcta: false },
-			{ respuesta: '41', correcta: false },
+			{ respuesta: 'continue', correcta: false },
+			{ respuesta: 'break', correcta: true },
+			{ respuesta: 'return', correcta: false },
+			{ respuesta: 'exit', correcta: false },
 		],
 	},
 	{
-		pregunta: '¿pregunta 3?',
+		pregunta:
+			'¿Cuál de las siguientes opciones se utiliza para comprobar si una variable es de tipo número en JavaScript?',
 		respuestas: [
-			{ respuesta: '25', correcta: true },
-			{ respuesta: '33', correcta: false },
-			{ respuesta: '41', correcta: false },
-			{ respuesta: '41', correcta: false },
+			{ respuesta: 'isNumber()', correcta: false },
+			{ respuesta: 'isNaN()', correcta: false },
+			{ respuesta: 'parseInt()', correcta: false },
+			{ respuesta: 'typeof', correcta: true },
 		],
 	},
 	{
-		pregunta: '¿pregunta 4?',
+		pregunta:
+			'¿Cuál de las siguientes opciones se utiliza para convertir una cadena en minúsculas en JavaScript?',
 		respuestas: [
-			{ respuesta: '25', correcta: true },
-			{ respuesta: '33', correcta: false },
-			{ respuesta: '41', correcta: false },
-			{ respuesta: '41', correcta: false },
+			{ respuesta: 'substring()', correcta: false },
+			{ respuesta: 'trim()', correcta: false },
+			{ respuesta: 'toLowerCase()', correcta: false },
+			{ respuesta: 'toUpperCase()', correcta: false },
 		],
 	},
 	{
-		pregunta: '¿pregunta 5?',
+		pregunta:
+			'¿Cuál de las siguientes opciones se utiliza para obtener el número máximo de un conjunto de valores en JavaScript?',
 		respuestas: [
-			{ respuesta: '25', correcta: true },
-			{ respuesta: '33', correcta: false },
-			{ respuesta: '41', correcta: false },
-			{ respuesta: '41', correcta: false },
+			{ respuesta: 'max()', correcta: false },
+			{ respuesta: 'Math.max()', correcta: true },
+			{ respuesta: 'maximum()', correcta: false },
+			{ respuesta: 'Math.maximum()', correcta: false },
 		],
 	},
 ];
