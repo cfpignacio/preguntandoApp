@@ -5,10 +5,8 @@ let puntos = 0;
 const db = PreguntasRespuestas;
 
 export function dibujarPreguntasRespuestas(elemento: HTMLDivElement) {
-	if (ContadorPregunta <= db.length - 1) {
+	if (ContadorPregunta < db.length) {
 		elemento.innerHTML = `<h1>${db[ContadorPregunta].pregunta}</h1>`;
-		const p = document.createElement('p');
-		p.textContent = puntos.toString();
 
 		const ul = document.createElement('ul');
 
@@ -21,7 +19,8 @@ export function dibujarPreguntasRespuestas(elemento: HTMLDivElement) {
 			btn.addEventListener('click', () => {
 				console.log(r.correcta);
 				if (r.correcta) {
-					++puntos;
+					// ++puntos;
+					puntos += 1;
 				}
 				dibujarPreguntasRespuestas(elemento);
 			});
@@ -33,6 +32,6 @@ export function dibujarPreguntasRespuestas(elemento: HTMLDivElement) {
 
 		++ContadorPregunta;
 	} else {
-		elemento.innerHTML = `<h1>COMPLETADO!!! 🎆 🔥 </h1> <h3>puntos: ${puntos} / ${db.length}  </h3>`;
+		elemento.innerHTML = `<h1>COMPLETADO!!! 🎆 🔥  </h1> <h3>puntos: ${puntos} / ${db.length}  </h3>`;
 	}
 }
